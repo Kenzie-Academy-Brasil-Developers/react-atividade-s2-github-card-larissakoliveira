@@ -1,0 +1,19 @@
+button{
+    padding: 10px;
+    font-weight: bold;
+    background-color: rgb(46, 49, 196);
+    color: bisque;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 5px;
+    font-size: 15px;
+}
+
+input{
+    margin-top: 30px;
+    background-color: transparent;
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 17px;
+}
+
