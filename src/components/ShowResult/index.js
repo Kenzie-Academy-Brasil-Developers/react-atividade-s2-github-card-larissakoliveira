@@ -1,13 +1,23 @@
-import './style.css'
+import "./style.css";
 
-const ShowResult = ({information}) => {
+const ShowResult = ({ information, error }) => {
+
+  const { owner:{avatar_url}, full_name, description } = information
+
   return (
     <>
-    <img src={information.owner.avatar_url} alt=''></img>
-    <h2>{information.full_name}</h2>
-    <p>{information.comments_url}</p>
-    </>
-  )
-};
+      {information !== undefined ?
+      <>
+      <img src={avatar_url} alt=""></img>
+      <div>
+      <h2>{full_name}</h2>
+      <p>{description}</p>
+      </div>
+      </>
+      :
+      <h3>{error}</h3>
+      }</>
+  );
+};  
 
 export default ShowResult;

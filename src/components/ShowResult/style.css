@@ -1,0 +1,22 @@
+img{
+    width: 70px;
+    height: 70px;
+    margin-right: 20px;
+}
+
+
+.titleDescription{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.result{
+    display: flex;
+    justify-content: center;
+    text-align: initial;
+}
+
+form{
+    margin-bottom: 20px;    
+}
